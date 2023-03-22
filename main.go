@@ -54,7 +54,7 @@ func main() {
 		result[browser] = ua
 	}
 
-	f, err := os.OpenFile(*output, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
+	f, err := os.OpenFile(*output, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0600)
 	if err != nil {
 		log.Fatal(err)
 	}
